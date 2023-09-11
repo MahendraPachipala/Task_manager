@@ -15,7 +15,8 @@ textbtn.addEventListener("click", function(){
     place.appendChild(Addbutton);
     document.getElementById("TaskContainer").style.display = "block";
     document.getElementById("btn").style.display = "none";
-    //function
+    document.getElementById("dummy").style.display = "none";
+    
     Addbutton.addEventListener("click", function(){
         const Taskholder = document.createElement("div");
         document.getElementById("Taskdiv").append(Taskholder);
