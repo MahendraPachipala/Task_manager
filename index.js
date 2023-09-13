@@ -1,6 +1,6 @@
 const textbtn = document.getElementById("btn");
 let i = 1;
-
+let n;
 textbtn.addEventListener("click", function(){
     const place = document.getElementById("TaskContainer");
 
@@ -38,8 +38,14 @@ textbtn.addEventListener("click", function(){
         document.getElementById("AddButton").remove();
         document.getElementById("btn").style.display = "inline";
         i++;
-    
+        n=i;
+        
+        labelTask.addEventListener("click",function(){
+            this.classList.toggle("strike");
+        })
+        
     });
 });
+
 
 
